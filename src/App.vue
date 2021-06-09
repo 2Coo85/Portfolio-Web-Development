@@ -17,6 +17,6 @@ export default {
 
 <style lang="scss">
     html {
-        background-image: url('./img/waterfall-cave.jpg');
+        background-image: url('img/waterfall-cave.jpg');
     }
 </style>
