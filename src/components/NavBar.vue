@@ -2,10 +2,10 @@
     <div id="nav">
         <nav class="main-nav">
             <ul>
-                <li><a href="P3_02_webpage.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">Resume</a></li>
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/projects">Projects</router-link></li>
+                <li><router-link to="/contact">Contact</router-link></li>
+                <li><router-link to="/resume">Resume</router-link></li>
             </ul>
         </nav>
     </div>
