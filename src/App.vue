@@ -16,7 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-    html {
-        background-image: url('img/waterfall-cave.jpg');
+    #app {
+        background-color: lavender;
+        color: blue;
     }
 </style>
