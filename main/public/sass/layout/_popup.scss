@@ -1,0 +1,42 @@
+.popup{
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    padding: 2px;
+    background: $box_bkgd;
+    border-radius: 10px;
+    @include text-style-project;
+    font-size: 14px;
+    padding: 15px;
+    opacity: 0;
+    box-shadow: 1px 1.5px 10px $shadowColor;
+    pointer-events: none;
+    & a{
+        pointer-events: all;
+    }
+    & img{
+        float: left;
+        filter: drop-shadow(-10px 10px 10px $textColor);
+    }
+    &:target{
+        opacity: 1;
+        filter: blur(0);
+        background-color: $box_bkgd;
+        animation: drop-down 1.5s ease-in-out forwards;
+    }
+}
+
+.x{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 5px;
+    background-color: $box_bkgd;
+    border-radius: 50%;
+    line-height: .75em;
+    width: .75em;
+    border: 2px double #ffffff;
+    pointer-events: all;
+    color: $textColor;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container primary">
     <main class="title-body" >
       <header class="name-header">
         <ul>

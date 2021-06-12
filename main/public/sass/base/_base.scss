@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.primary{
+    @include background-style;
+    background-image: url(.../assests/green-waterfall.jpg);
+}
+
+.secondary{
+    @include background-style2;
+    background-image: url(.../assets/gradient.jpg), url(.../assets/blurry-waterfall.jpg);
+    background-blend-mode: overlay;
+}
+
+.flex-container{
+    display: flex;
+    flex: auto;
+}
+
+main{
+    width: 70%;  
+}
+
+.title-body{
+    flex-flow: column;
+}
+
+.phone-image{
+    display: none;
+}

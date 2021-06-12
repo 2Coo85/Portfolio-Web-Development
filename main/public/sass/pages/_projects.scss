@@ -1,0 +1,57 @@
+.proj-page-body{
+    width: 72%;
+    margin-right: 2%;
+    display: flex;
+    flex: auto;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    a{
+        text-decoration: none;
+        color: $textColor;
+        &:hover{
+            background-color: #ffffff;
+        }
+    }
+}
+
+.images{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 14%;
+    filter: blur(2px);
+    img{
+        border-radius: 20%;
+        padding: 5px;
+    }
+    & a{
+        margin-right: 100px;
+        border: inset 5px $textColor;
+        border-radius: 20%;
+        &:hover{
+            border: outset 5px #33aa0e;
+            transform: scale(1.5);
+            filter: blur(0);
+        }
+        &:first-child{
+            animation: slide-up 1.5s ease-out 2.25s both;
+        }
+        &:nth-child(2){
+            animation: slide-up 1.5s ease-out 2.5s both;
+        }
+        &:nth-child(3){
+            animation: slide-up 1.5s ease-out 2.75s both;
+        }
+        &:nth-child(4){
+            animation: slide-up 1.5s ease-out 3s both;
+        }
+        &:nth-child(5){
+            animation: slide-up 1.5s ease-out 3.25s both;
+        }
+        
+    }
+    & a:first-child{
+        margin-left: 0%;
+    }
+}

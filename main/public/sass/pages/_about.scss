@@ -1,0 +1,33 @@
+.top-box.info-box{
+    margin-left: 25%;
+    padding: 25px;
+    text-align: justify;
+    animation: slide-in 1.5s cubic-bezier(.11,.64,.63,.91) 2.25s both;
+}
+
+.bottom-box.info-box{
+    margin-top: 2%;
+    margin-left: 45%;
+    animation: slide-in 1.5s cubic-bezier(.11,.64,.63,.91) 2.75s both;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+}
+
+.top-box.info-box, .bottom-box.info-box{
+    width: 800px;
+    filter: blur(2px);
+    h4{
+        text-align: center;
+    }
+    &:hover{
+        @include hover-over;
+    }
+}
+
+.about-page-body{
+    width: 80%;
+}

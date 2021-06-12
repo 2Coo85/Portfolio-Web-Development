@@ -1,0 +1,43 @@
+@keyframes drop-down{
+    0%{transform: scale(.5); opacity: 0;}
+    66%{transform: scale(2.25) translateX(325px); opacity: 1;}
+    100%{transform: scale(1.25) translateX(275px);}
+}
+
+@keyframes drop-down2{
+    0%{transform: scale(.5); opacity: 0;}
+    66%{transform: translateX(600px) scale(1.75) ; opacity: 1;}
+    100%{transform: translateX(465px) translateY(50px) scale(1);}
+}
+
+@keyframes slide-up{
+    0%{transform: translateX(-750px) translateY(-500px);}
+    30%{transform: translateX(100px) translateY(75px);}
+    45%{transform: translateX(-75px) translateY(-100px);}
+    60%{transform: translateX(50px) translateY(25px);}
+    80%{transform: translateX(-50px) translateY(-75px);}
+    100%{transform: translateX(0) translateY(0px);}
+
+}
+
+@keyframes squeeze-in{
+    0%{letter-spacing: 1em; opacity: 0; transform: translateX(800px);}
+    40%{opacity: .75}
+    100%{letter-spacing: .1em; opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes slide-in{
+    0%{transform: translateX(-1999px) rotateY(0deg);}
+    30%{transform: translateX(800px) rotateY(180deg) perspective(25px) scale(0.25);}
+    45%{transform: translateX(600px);}
+    55%{transform: translateX(-200px);}
+    65%{transform: translateX(250px);}
+    75%{transform: translateX(-100px);}
+    85%{transform: translateX(100px);}
+    100%{transform: translateX(0px) rotateY(0deg) perspective(500px) scale(1);}
+}
+
+@keyframes tilt{
+    0%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg);}
+}

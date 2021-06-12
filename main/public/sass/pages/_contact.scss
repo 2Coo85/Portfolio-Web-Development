@@ -1,0 +1,39 @@
+.info-box{
+    margin-top: 1%;
+    margin-left: 35%;
+    filter: blur(2px);
+}
+
+.address{
+    margin-left: 35%;
+    animation: slide-in 1.5s cubic-bezier(.11,.64,.63,.91) 2.25s both;
+    &:hover{
+        @include hover-over;
+    }
+    & p{
+        margin-left: 6%;
+    }
+}
+
+.email{
+    margin-left: 50%;
+    animation: slide-in 1.5s cubic-bezier(.11,.64,.63,.91) 2.75s both;
+    &:hover{
+        @include hover-over;
+    }
+    & p{
+        margin-left: 6%;
+    }
+}
+
+.github{
+    margin-left: 65%;
+    animation: slide-in 1.5s cubic-bezier(.11,.64,.63,.91) 3.25s both;
+    &:hover{
+        @include hover-over;
+    }
+    & p{
+        margin-left: 6%;
+    }
+}
+

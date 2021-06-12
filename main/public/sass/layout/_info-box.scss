@@ -1,0 +1,15 @@
+.info-box{
+    @include box-border;
+    background-color: $box_bkgd;
+    color: lighten($color: $textColor, $amount: 40);
+    font-size: 1.3em;
+    padding: 10px;
+    width: 500px;
+    border-radius: 20%;
+}
+
+
+.bottom-box{
+    margin-left: 10%;
+}
+

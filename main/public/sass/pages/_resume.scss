@@ -1,0 +1,84 @@
+.education{
+    padding: 15px;
+    text-align: justify;
+}
+
+.experience{
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.reference{
+    margin-top: 2%;
+}
+
+.education.popup, .experience.popup, .reference.popup{
+    width: 500px;
+    display: flex;
+    position: absolute;
+    left: -30%;
+    top: 8%;
+    font-size: smaller;
+    flex-flow: column nowrap;
+    h4{
+        text-align: center;
+    }
+    &:target{
+        opacity: 1;
+        filter: blur(0);
+        background-color: $box_bkgd;
+        animation: drop-down2 1.5s ease-in-out forwards;
+    }
+}
+
+.resume-page-body{
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: auto;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 50%;
+    left: 18%;
+    font-size: 60px;
+    & a{
+        margin-right: 200px;
+        border-radius: 20%;
+        color: darken($color: $shadowColor, $amount: 30);
+        text-shadow: 2px 2.5px 25px lighten($color: $shadowColor, $amount: 20);
+        animation-play-state: paused;
+        &:hover{
+            color: $shadowColor;
+            border: outset #eff78c 5px;
+            background-color: $box_bkgd;
+            padding: 5px;
+            box-shadow: 10px 12px 50px darken($color: $shadowColor, $amount: 40);
+        }
+        &:first-child{
+            animation: slide-up 1.5s ease-out 2.25s both 1;
+            &:hover{
+                animation: slide-up 1.5s ease-out 2.25s both 1, tilt 0.5s linear infinite alternate running;
+            }
+        }
+        &:nth-child(2){
+            animation: slide-up 1.5s ease-out 2.5s both 1;
+            &:hover{
+                animation: slide-up 1.5s ease-out 2.5s both 1, tilt 0.5s linear infinite alternate running;
+            }
+        }
+        &:nth-child(3){
+            animation: slide-up 1.5s ease-out 2.75s both 1;
+            &:hover{
+                animation: slide-up 1.5s ease-out 2.75s both 1, tilt 0.5s linear infinite alternate running;
+            }
+        }
+        
+    }
+    & a:first-child{
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,68 @@
+@media screen and (min-width: 601px) and (max-width: 800px){
+    nav{
+        font-size: 13px;
+        width: 40%;
+    }
+    .flex-container{
+        width: 100%;
+    }
+    .name-header{
+        font-size: 2.25em;
+    }
+    .title-header{
+        font-size: 1.75em;
+        margin-left: 40%;
+    }
+    .page-header{
+        font-size: 1.25em;
+    }
+
+    .info-box, .top-box.info-box, .bottom-box.info-box{
+        width: 75%;
+        font-size: 16px;
+        margin-left: 41%;
+    }
+    .education.popup, .experience.popup, .reference.popup{
+        width: 80%;
+    }
+    @keyframes drop-down2{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.15) translateX(200px); opacity: 1;}
+        100%{transform: scale(.75) translateX(100px) translateY(50px)}
+    }
+    .icons{
+        font-size: 48px;
+        left: 15%;
+        & a{
+            margin-right: 75px;
+        }
+    }
+    .proj-page-body{
+        width: 65%;
+    }
+    .resume-page-body{
+        width: 80%;
+    }
+    .images{
+        width: 75%;
+        left: 0;
+        & a{
+            width: 30%;
+            margin-right: 30px;
+            border: none;
+            & img{
+                transform: scale(.8);
+            }
+            &:hover{
+                border: none;
+            }
+        }
+
+    }
+    @keyframes drop-down{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.75) translateX(200px); opacity: 1;}
+        100%{transform: scale(1.15) translateX(100px);}
+    }
+
+}

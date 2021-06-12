@@ -1,0 +1,77 @@
+@mixin box_border{
+    border: 2px solid #004D40;
+}
+
+@mixin border-radius-img{
+    border-radius: 50%;
+}
+@mixin box-shadow{
+    box-shadow: 0.5px 0.5px #004D40;
+}
+@mixin text-transform{
+    text-transform: uppercase;
+}
+@mixin background-style{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@mixin background-style2{
+    background-position: center, center;
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+@mixin header-style{
+    color: $textColor;
+    text-shadow: -2.5px -2px $shadowColor;
+    @include font-style-nav;
+}
+
+@mixin profile_img{
+    background-image: url(/img/profile_pic.jpg);
+    @include border-radius-img;
+    @include box-shadow;
+}
+
+@mixin project-image{
+    width: 100px;
+    height: 75px;
+}
+
+@mixin text-style-project{
+    @include text-transform;
+    color: $textColor;
+}
+@mixin font-size-nav{
+    font-size: 18px;
+}
+@mixin font-style-nav{
+    font-style: italic;
+}
+@mixin text-style-nav{
+    @include text-transform;
+    @include font-size-nav;
+}
+@mixin nav-style{
+    @include font-style-nav;
+    @include text-style-nav;
+}
+@mixin box-style{
+    color: $textColor;
+    @include box-border;
+}
+
+@mixin info-box-style{
+    @extend box-style;
+    @include text-style;
+}
+
+@mixin hover-over {
+    border: inset 10px lighten($color: $textColor, $amount: 10);
+    background-color: darken($color: $box_bkgd, $amount: 50);
+    filter: blur(0);
+}

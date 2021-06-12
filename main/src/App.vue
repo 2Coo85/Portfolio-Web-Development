@@ -13,6 +13,15 @@
   color: #2c3e50;
 }
 
+.flex-container{
+    display: flex;
+    flex: auto;
+}
+
+main{
+    width: 70%;  
+}
+
 #nav {
   padding: 30px;
 

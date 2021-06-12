@@ -1,0 +1,61 @@
+@media screen and (min-width: 800px) and (max-width: 991px){
+    .name-header{
+        font-size: 2.75em;
+    }
+    .title-header{
+        font-size: 1.85em;
+        margin-left: 55%;
+        margin-top: 19%;
+    }
+    nav{
+        font-size: 17px;
+        margin-right: 7%;
+    }
+    .proj-page-body{
+        width: 65%;
+    }
+    .page-header{
+        font-size: 1.5em;
+        margin-left: 5%;
+    }
+    .info-box, .top-box.info-box, .bottom-box.info-box{
+        width: 75%;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .top-box.info-box{
+        margin-left: 30%;
+    }
+    .bottom-box.info-box{
+        margin-left: 45%;
+    }
+    .images{
+        width: 50%;
+        left: 10%;
+        top: 10%;
+        & a{
+            transform: scale(.5);
+            margin-right: 25px;
+        }
+    }
+    @keyframes drop-down{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.75) translateX(300px); opacity: 1;}
+        100%{transform: scale(1.15) translateX(225px);}
+    }
+    .icons{
+        font-size: 48px;
+        left: 10%;
+        & a{
+            margin-right: 100px;
+        }
+    }
+    .resume-page-body{
+        width: 75%;
+    }
+    @keyframes drop-down2{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.75) translateX(250px); opacity: 1;}
+        100%{transform: scale(.9) translateX(150px) translateY(75px)}
+    }
+}

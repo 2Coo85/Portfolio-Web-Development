@@ -1,0 +1,55 @@
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    nav{
+        width: 40%;
+    }
+    .name-header{
+        font-size: 2.25em;
+    }
+    .title-header{
+        font-size: 1.75em;
+    }
+    .page-header{
+        font-size: 1.5em;
+    }
+    .top-box.info-box{
+        margin-left: 20%;
+    }
+    .bottom-box.info-box{
+        margin-left: 35%;
+    }
+    .info-box{
+        font-size: 17px;
+    }
+    .top-box.info-box, .bottom-box.info-box{
+        width: 95%;
+    }
+    .info-box{
+        width: 75%;
+    }
+    .images{
+        left: 11%;
+        & a{
+            margin-right: 60px;
+        }
+    }
+    .proj-page-body{
+        width: 76%;
+    }
+    @keyframes drop-down{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.75) translateX(300px); opacity: 1;}
+        100%{transform: scale(1.15) translateX(235px);}
+    }
+    .icons{
+        left: 15%;
+        font-size: 60px;
+        & a{
+            margin-right: 110px;
+        }
+    }
+    @keyframes drop-down2{
+        0%{transform: scale(.5); opacity: 0;}
+        66%{transform: scale(1.75) translateX(400px); opacity: 1;}
+        100%{transform: scale(.9) translateX(365px) translateY(50px)}
+    }
+}
