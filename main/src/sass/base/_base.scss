@@ -6,12 +6,12 @@ html, body{
 
 .primary{
     @include background-style;
-    background-image: url(assests/green-waterfall.jpg);
+    background-image: url(img/green-waterfall.jpg);
 }
 
 .secondary{
     @include background-style2;
-    background-image: url(.../assets/gradient.jpg), url(.../assets/blurry-waterfall.jpg);
+    background-image: url(img/gradient.jpg), url(img/blurry-waterfall.jpg);
     background-blend-mode: overlay;
 }
 

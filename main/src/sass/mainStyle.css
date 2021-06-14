@@ -259,7 +259,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(assests/green-waterfall.jpg);
+  background-image: url(img/green-waterfall.jpg);
 }
 
 .secondary {
@@ -268,7 +268,7 @@ html, body {
   background-repeat: no-repeat, no-repeat;
   background-blend-mode: overlay;
   background-attachment: fixed;
-  background-image: url(.../assets/gradient.jpg), url(.../assets/blurry-waterfall.jpg);
+  background-image: url(img/gradient.jpg), url(img/blurry-waterfall.jpg);
   background-blend-mode: overlay;
 }
 
