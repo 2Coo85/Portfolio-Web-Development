@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container secondary">
+  <div class="flex-container">
     <main class="about-page-body">
       <header class="page-header">
         <h2>About Me</h2>
@@ -24,9 +24,9 @@
     <nav class="main-nav">
       <ul>
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
         <li><router-link to="/resume">Resume</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
   </div>

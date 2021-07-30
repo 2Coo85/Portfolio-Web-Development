@@ -1,11 +1,16 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive>
+      <router-view :key="$route.fullPath"/>
+    </keep-alive>
   </div>
 </template>
 
 <style lang="scss">
-
+#app {
+  margin: 0;
+  height: 50%;
+}
 #nav {
   padding: 30px;
 

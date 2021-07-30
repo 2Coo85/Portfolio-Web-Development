@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-container secondary">
+    <div class="flex-container">
         <main class="resume-page-body">
             <header class="page-header">
                 <h2>Resume</h2>

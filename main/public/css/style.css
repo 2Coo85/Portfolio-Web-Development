@@ -4,11 +4,11 @@
     opacity: 0;
   }
   66% {
-    transform: scale(2.25) translateX(325px);
+    /* transform: scale(1.25) translateX(250px) translateY(-105px); */
     opacity: 1;
   }
   100% {
-    transform: scale(1.25) translateX(275px);
+    transform: scale(1.25) translateY(50px) translateX(350px);
   }
 }
 @keyframes drop-down2 {
@@ -17,11 +17,11 @@
     opacity: 0;
   }
   66% {
-    transform: translateX(600px) scale(1.75);
+    transform: translateX(200px) scale(1.5);
     opacity: 1;
   }
   100% {
-    transform: translateX(465px) translateY(50px) scale(1);
+    transform: translateX(600px) translateY(-10px) scale(1.15);
   }
 }
 @keyframes slide-up {
@@ -96,29 +96,13 @@
 html, body {
   margin: 0;
   width: 100%;
-  height: 100%;
-}
-
-.primary {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(img/green-waterfall.jpg);
-}
-
-.secondary {
-  background-position: center, center;
-  background-size: 100% 100%, 100% 100%;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed;
-  background-image: url(img/gradient.jpg), url(img/blurry-waterfall.jpg);
-  background-blend-mode: overlay;
+  max-height: 100%;
 }
 
 .flex-container {
   display: flex;
   flex: auto;
+  margin-bottom: 40%;
 }
 
 main {
@@ -145,12 +129,12 @@ nav {
   display: flex;
   flex-flow: column;
   flex: auto;
-  justify-content: right;
+  justify-content: left;
   align-content: space-around;
   font-style: italic;
   text-transform: uppercase;
   font-size: 18px;
-  width: 35%;
+  width: 24%;
   margin-right: 3%;
   margin-left: 2%;
 }
@@ -201,7 +185,7 @@ nav a:hover {
   color: #a2ff8f;
   text-shadow: -2.5px -2px #29f500;
   font-style: italic;
-  font-size: 3.25em;
+  font-size: 2.5em;
   animation: squeeze-in 1.25s ease-in-out both;
   margin-left: 5%;
 }
@@ -214,7 +198,7 @@ nav a:hover {
 
 .title-header {
   color: #a2ff8f;
-  font-size: 2.25em;
+  font-size: 1.9em;
   margin-left: 50%;
   margin-top: 25%;
   animation: squeeze-in 1s ease-in-out 0.75s both;
@@ -222,8 +206,8 @@ nav a:hover {
 
 .page-header {
   color: #a2ff8f;
-  font-size: 1.75em;
-  margin-left: 5%;
+  font-size: 1.5em;
+  margin-left: 1.5%;
   margin-bottom: 20px;
   width: 100%;
   display: inline-flex;
@@ -232,7 +216,7 @@ nav a:hover {
 
 .info-box {
   border: 2px solid #004D40;
-  background-color: rgba(3, 58, 44, 0.5);
+  background-color: rgba(3, 58, 44, .75);
   color: white;
   font-size: 1.3em;
   padding: 10px;
@@ -247,10 +231,11 @@ nav a:hover {
 .popup {
   width: 25%;
   position: absolute;
-  top: 50%;
-  left: 15%;
+  top: 12%;
+  left: 1%;
+  transform: scale(0.25);
   padding: 2px;
-  background: rgba(3, 58, 44, 0.5);
+  background: rgba(3, 58, 44, 0.75);
   border-radius: 10px;
   text-transform: uppercase;
   color: #a2ff8f;
@@ -270,8 +255,8 @@ nav a:hover {
 .popup:target {
   opacity: 1;
   filter: blur(0);
-  background-color: rgba(3, 58, 44, 0.5);
-  animation: drop-down 1.5s ease-in-out forwards;
+  background-color: rgba(3, 58, 44, 1);
+  animation: drop-down2 1.5s ease-in-out forwards;
 }
 
 .x {
@@ -286,6 +271,24 @@ nav a:hover {
   border: 2px double #ffffff;
   pointer-events: all;
   color: #a2ff8f;
+}
+.box-2 {
+  top: 15%;
+}
+.box-3 {
+  top: 32%;
+}
+.box-4 {
+  top: 41%;
+}
+.box-5 {
+  top: 48%;
+}
+.box-6 {
+  top: 52%;
+}
+.box-7 {
+  top: 60%;
 }
 
 .proj-page-body {
@@ -307,24 +310,38 @@ nav a:hover {
 
 .images {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   position: relative;
-  left: 14%;
-  filter: blur(2px);
+  top: -6%;
+  left: 0%;
+  /* filter: blur(2px); */
+  flex-direction: column;
+  width: 50px;
+  align-items: center;
 }
 .images img {
   border-radius: 20%;
-  padding: 5px;
+  padding: 1px;
+  width: 50px;
+  height: 60px;
 }
 .images a {
   margin-right: 100px;
   border: inset 5px #a2ff8f;
   border-radius: 20%;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 60px;
 }
 .images a:hover {
   border: outset 5px #33aa0e;
   transform: scale(1.5);
   filter: blur(0);
+}
+.images a:visited {
+  filter: blur(10px);
+  border: #33aa0e;
 }
 .images a:first-child {
   animation: slide-up 1.5s ease-out 2.25s both;
@@ -341,12 +358,19 @@ nav a:hover {
 .images a:nth-child(5) {
   animation: slide-up 1.5s ease-out 3.25s both;
 }
+.images a:nth-child(6) {
+  animation: slide-up 1.5s ease-out 3.5s both;
+}
+.images a:nth-child(7) {
+  animation: slide-up 1.5s ease-out 3.75s both;
+}
 .images a:first-child {
   margin-left: 0%;
 }
 
 .top-box.info-box {
   margin-left: 25%;
+  margin-top: -80px;
   padding: 25px;
   text-align: justify;
   animation: slide-in 1.5s cubic-bezier(0.11, 0.64, 0.63, 0.91) 2.25s both;
@@ -366,7 +390,6 @@ nav a:hover {
 
 .top-box.info-box, .bottom-box.info-box {
   width: 800px;
-  filter: blur(2px);
 }
 .top-box.info-box h4, .bottom-box.info-box h4 {
   text-align: center;
@@ -374,7 +397,6 @@ nav a:hover {
 .top-box.info-box:hover, .bottom-box.info-box:hover {
   border: inset 10px #ccffc2;
   background-color: rgba(0, 0, 0, 0.5);
-  filter: blur(0);
 }
 
 .about-page-body {
@@ -384,10 +406,10 @@ nav a:hover {
 .info-box {
   margin-top: 1%;
   margin-left: 35%;
-  filter: blur(2px);
 }
 
 .address {
+  margin-top: -2%;
   margin-left: 35%;
   animation: slide-in 1.5s cubic-bezier(0.11, 0.64, 0.63, 0.91) 2.25s both;
 }
@@ -426,6 +448,9 @@ nav a:hover {
   margin-left: 6%;
 }
 
+.github a {
+  color: #29f500;
+}
 .education {
   padding: 15px;
   text-align: justify;
@@ -462,17 +487,17 @@ nav a:hover {
 .resume-page-body {
   width: 80%;
   display: flex;
-  flex-flow: row nowrap;
-  flex: auto;
+  flex-flow: column nowrap;
 }
 
 .icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
-  top: 50%;
-  left: 18%;
+  top: 5%;
+  left: 30%;
   font-size: 60px;
+  align-items: center;
 }
 .icons a {
   margin-right: 200px;
@@ -520,8 +545,13 @@ nav a:hover {
   }
 
   .primary {
-    background-size: contain;
+    background-size: cover;
     background-color: #095000;
+    background-blend-mode: overlay;
+  }
+
+  #waterfall .streak {
+    display: none;
   }
 
   .flex-container {
@@ -536,7 +566,7 @@ nav a:hover {
   }
 
   .name-header {
-    font-size: 1.6em;
+    font-size: 1.25em;
     text-align: center;
     margin-left: 1%;
     justify-content: center;
@@ -550,7 +580,7 @@ nav a:hover {
   }
 
   .title-header {
-    font-size: 1.1em;
+    font-size: .75em;
     width: 100%;
     text-align: center;
     margin-left: 5%;
@@ -561,7 +591,7 @@ nav a:hover {
 
   nav {
     order: -2;
-    font-size: 12px;
+    font-size: 0.6em;
     margin-right: 1%;
     width: 100%;
     margin-bottom: -5%;
@@ -602,6 +632,7 @@ nav a:hover {
 
   .page-header {
     font-size: 1em;
+    color: #072001;
     justify-content: center;
     align-items: center;
     order: -2;
@@ -736,10 +767,10 @@ nav a:hover {
     transform: scaleX(2.5);
     margin-left: 90px;
   }
-  .images:hover {
+  /* .images:hover {
     z-index: 300;
     transform: rotateY(180deg);
-  }
+  } */
 
   .popup {
     z-index: 400;
@@ -757,33 +788,104 @@ nav a:hover {
     transform: rotateX(0deg) rotateY(0deg);
   }
 }
-@media screen and (min-width: 601px) and (max-width: 800px) {
+@media screen and (min-width: 601px) and (max-width: 799px) {
   nav {
     font-size: 13px;
-    width: 40%;
+    width: 30%;
+    margin-right: 6%;
   }
 
-  .flex-container {
-    width: 100%;
+  .streak{
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    visibility: hidden;
   }
+
+  .top{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    z-index: -1;
+  }
+  .middle{
+    position: absolute;
+    top: 3%;
+    left: 40.3%;
+    z-index: -1;
+  }
+  .bottom{
+    position: absolute;
+    top: 3%;
+    left: 40.8%;
+    z-index: -1;
+  }
+  .st1 {
+    position: absolute;
+    left: 40.5%;
+  }
+  .sm1 {
+    position: absolute;
+    left: 41%;
+  }
+  .sb5 {
+    position: absolute;
+    top: 20%;
+    left: 41.5%;
+  }
+  .st5 {
+    position: absolute;
+    top: 20%;
+    left: 40.5%;
+  }
+  .sm5 {
+    position: absolute;
+    top: 20%;
+    left: 41%;
+  }
+  .sb1 {
+    position: absolute;
+    top: 20%;
+    left: 41.5%;
+  }
+  /* .flex-container {
+    width: 100%;
+  } */
 
   .name-header {
-    font-size: 2.25em;
+    font-size: 1.75em;
   }
 
   .title-header {
-    font-size: 1.75em;
+    font-size: 1em;
     margin-left: 40%;
   }
 
   .page-header {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   .info-box, .top-box.info-box, .bottom-box.info-box {
-    width: 75%;
-    font-size: 16px;
-    margin-left: 41%;
+    width: 80%;
+    font-size: 0.75em;
+    margin-left: 31%;
+  }
+
+  .top-box.info-box {
+    margin-top: -6%;
+  }
+
+  .bottom-box.info-box {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  .address, .email{
+    margin-bottom: 5%;
+  }
+
+  .github {
+    margin-bottom: 15%;
   }
 
   .education.popup, .experience.popup, .reference.popup {
@@ -805,18 +907,21 @@ nav a:hover {
   }
   .icons {
     font-size: 48px;
-    left: 15%;
+    left: 35%;
   }
   .icons a {
     margin-right: 75px;
   }
 
   .proj-page-body {
-    width: 65%;
+    width: 75%;
+    margin-left: 10px;
   }
 
   .resume-page-body {
     width: 80%;
+    height: 100%;
+    margin-left: 2%;
   }
 
   .images {
@@ -824,7 +929,7 @@ nav a:hover {
     left: 0;
   }
   .images a {
-    width: 30%;
+    width: 100%;
     margin-right: 30px;
     border: none;
   }
@@ -851,17 +956,36 @@ nav a:hover {
 }
 @media screen and (min-width: 800px) and (max-width: 991px) {
   .name-header {
-    font-size: 2.75em;
+    font-size: 1.6em;
   }
 
   .title-header {
-    font-size: 1.85em;
+    font-size: 1em;
     margin-left: 55%;
     margin-top: 19%;
   }
 
+  .top{
+    position: absolute;
+    top: 4%;
+    left: 38.5%;
+    z-index: -1;
+  }
+  .middle{
+    position: absolute;
+    top: 4%;
+    left: 38.9%;
+    z-index: -1;
+  }
+  .bottom{
+    position: absolute;
+    top: 4%;
+    left: 39.2%;
+    z-index: -1;
+  }
+
   nav {
-    font-size: 17px;
+    font-size: 0.85em;
     margin-right: 7%;
   }
 
@@ -942,6 +1066,25 @@ nav a:hover {
     width: 40%;
   }
 
+  .top{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: -1;
+  }
+  .middle{
+    position: absolute;
+    top: 10%;
+    left: 40.3%;
+    z-index: -1;
+  }
+  .bottom{
+    position: absolute;
+    top: 10%;
+    left: 40.8%;
+    z-index: -1;
+  }
+
   .name-header {
     font-size: 2.25em;
   }
@@ -975,14 +1118,14 @@ nav a:hover {
   }
 
   .images {
-    left: 11%;
+    left: 8%;
   }
   .images a {
     margin-right: 60px;
   }
 
   .proj-page-body {
-    width: 76%;
+    width: 80%;
   }
 
   @keyframes drop-down {
@@ -1018,6 +1161,38 @@ nav a:hover {
     100% {
       transform: scale(0.9) translateX(365px) translateY(50px);
     }
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1499px) {
+  .top{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: -1;
+  }
+  .middle{
+    position: absolute;
+    top: 10%;
+    left: 40.3%;
+    z-index: -1;
+  }
+  .bottom{
+    position: absolute;
+    top: 10%;
+    left: 40.8%;
+    z-index: -1;
+  }
+  .st1 {
+    position: absolute;
+    left: 40.5%;
+  }
+  .sm1 {
+    position: absolute;
+    left: 41%;
+  }
+  .sb1 {
+    position: absolute;
+    left: 41.5%;
   }
 }
 
